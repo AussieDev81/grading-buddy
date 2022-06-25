@@ -12,7 +12,7 @@ import java.util.Set;
 public interface AnnotationHandler {
 
     /**
-     * Get a set of all fields (variables & constants) annotated with the given annotation classes
+     * Get a set of all fields annotated with the given annotation classes
      * @param packageName The base package to scan
      * @param annotations The annotation classes to be scanned
      * @return A set of {@link Field} objects
