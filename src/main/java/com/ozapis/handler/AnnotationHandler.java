@@ -1,10 +1,7 @@
 package com.ozapis.handler;
 
 import org.reflections.Reflections;
-import org.reflections.scanners.FieldAnnotationsScanner;
-import org.reflections.scanners.MethodAnnotationsScanner;
-import org.reflections.scanners.SubTypesScanner;
-import org.reflections.scanners.TypeAnnotationsScanner;
+import org.reflections.scanners.*;
 
 import java.lang.annotation.Annotation;
 import java.lang.reflect.Field;
@@ -15,15 +12,7 @@ import java.util.Set;
 public interface AnnotationHandler {
 
     /**
-     * Get a set of all fields (variables & constants) annotated with the given annotation classes.<br/>
-     * For example:
-     * <pre>
-     *{@literal @Feedback(comment="my comment")}
-     * String name;
-     *
-     * var packageName = "com.ozapis";
-     *{@literal Set<Field>} fields = AnnotationHandler.getAnnotatedFields(Feedback.class, packageName);
-     * </pre>
+     * Get a set of all fields (variables & constants) annotated with the given annotation classes
      * @param packageName The base package to scan
      * @param annotations The annotation classes to be scanned
      * @return A set of {@link Field} objects
@@ -32,8 +21,8 @@ public interface AnnotationHandler {
     static Set<Field> getAnnotatedFields(String packageName, Class<? extends Annotation>... annotations){
         Reflections reflections = new Reflections(
                 packageName,
-                new SubTypesScanner(),
-                new FieldAnnotationsScanner());
+                Scanners.SubTypes,
+                Scanners.FieldsAnnotated);
         Set<Field> results = new LinkedHashSet<>();
         for(Class<? extends Annotation> a: annotations){
             results.addAll(reflections.getFieldsAnnotatedWith(a));
@@ -42,13 +31,7 @@ public interface AnnotationHandler {
     }
 
     /**
-     * Gets a set of all methods having the given annotations at the method level. For example:
-     * <pre>
-     *{@literal @Feedback(comment="my comment")}
-     * public void myMethod() {
-     *      //This method will be found
-     * }
-     * </pre>
+     * Gets a set of all methods having the given annotations at the method level
      * @param packageName The base package to be scanned
      * @param annotations The annotation classes to be scanned
      * @return A set of {@link Method} objects
@@ -57,8 +40,8 @@ public interface AnnotationHandler {
     static Set<Method> getAnnotatedMethods(String packageName, Class<? extends Annotation>... annotations){
         Reflections reflections = new Reflections(
                 packageName,
-                new SubTypesScanner(),
-                new MethodAnnotationsScanner());
+                Scanners.SubTypes,
+                Scanners.MethodsAnnotated);
         Set<Method> results = new LinkedHashSet<>();
         for(Class<? extends Annotation> a: annotations){
             results.addAll(reflections.getMethodsAnnotatedWith(a));
@@ -82,8 +65,8 @@ public interface AnnotationHandler {
     static Set<Class<?>> getAnnotatedClasses(String packageName, Class<? extends Annotation>... annotations){
         Reflections reflections = new Reflections(
                 packageName,
-                new SubTypesScanner(),
-                new TypeAnnotationsScanner());
+                Scanners.SubTypes,
+                Scanners.TypesAnnotated);
         Set<Class<?>> results = new LinkedHashSet<>();
         for(Class<? extends Annotation> a: annotations){
             results.addAll(reflections.getTypesAnnotatedWith(a));
