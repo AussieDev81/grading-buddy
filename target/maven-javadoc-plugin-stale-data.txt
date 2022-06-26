@@ -1,0 +1,63 @@
+@options
+@packages
+@argfile
+-classpath
+'C:/Users/natha/.m2/repository/org/reflections/reflections/0.10.2/reflections-0.10.2.jar;C:/Users/natha/.m2/repository/org/javassist/javassist/3.28.0-GA/javassist-3.28.0-GA.jar;C:/Users/natha/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar;C:/Users/natha/.m2/repository/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar;C:/Users/natha/.m2/repository/org/slf4j/slf4j-simple/1.7.36/slf4j-simple-1.7.36.jar'
+-encoding
+'UTF-8'
+-protected
+-source
+'17'
+-sourcepath
+'D:/Libraries/GradingBuddy/src/main/java'
+-author
+-bottom
+'Copyright &#169; 2022. All rights reserved.'
+-charset
+'UTF-8'
+-d
+'D:/Libraries/GradingBuddy/target/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'com.ozapis:grading-buddy 1.0.0 API'
+-use
+-version
+-windowtitle
+'com.ozapis:grading-buddy 1.0.0 API'
+com.ozapis.annotation
+com.ozapis
+com.ozapis.handler
+com.ozapis.model
+'D:/Libraries/GradingBuddy/src/main/java/com/ozapis/annotation/Feedback.java'
+'D:/Libraries/GradingBuddy/src/main/java/com/ozapis/annotation/Grade.java'
+'D:/Libraries/GradingBuddy/src/main/java/com/ozapis/GradingBuddy.java'
+'D:/Libraries/GradingBuddy/src/main/java/com/ozapis/handler/AnnotationHandler.java'
+'D:/Libraries/GradingBuddy/src/main/java/com/ozapis/handler/ReportHandler.java'
+'D:/Libraries/GradingBuddy/src/main/java/com/ozapis/model/Person.java'
+'D:/Libraries/GradingBuddy/src/main/java/com/ozapis/model/Report.java'
+'D:/Libraries/GradingBuddy/src/main/java/com/ozapis/model/Student.java'
+'D:/Libraries/GradingBuddy/src/main/java/com/ozapis/model/Teacher.java'
+C:\Users\natha\.m2\repository\org\reflections\reflections\0.10.2\reflections-0.10.2.jar = 1655953137678
+C:\Users\natha\.m2\repository\org\javassist\javassist\3.28.0-GA\javassist-3.28.0-GA.jar = 1655953138610
+C:\Users\natha\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar = 1631316630060
+C:\Users\natha\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar = 1646275566100
+C:\Users\natha\.m2\repository\org\slf4j\slf4j-simple\1.7.36\slf4j-simple-1.7.36.jar = 1656124934107
+D:\Libraries\GradingBuddy\src\main\java = 1656123830757
+D:\Libraries\GradingBuddy\target\apidocs\allclasses-index.html = 1656142187160
+D:\Libraries\GradingBuddy\target\apidocs\allpackages-index.html = 1656142187161
+D:\Libraries\GradingBuddy\target\apidocs\element-list = 1656142187076
+D:\Libraries\GradingBuddy\target\apidocs\help-doc.html = 1656142187181
+D:\Libraries\GradingBuddy\target\apidocs\index-all.html = 1656142187177
+D:\Libraries\GradingBuddy\target\apidocs\index.html = 1656142187147
+D:\Libraries\GradingBuddy\target\apidocs\jquery-ui.overrides.css = 1656142187196
+D:\Libraries\GradingBuddy\target\apidocs\member-search-index.js = 1656142187164
+D:\Libraries\GradingBuddy\target\apidocs\module-search-index.js = 1656142187162
+D:\Libraries\GradingBuddy\target\apidocs\overview-summary.html = 1656142187178
+D:\Libraries\GradingBuddy\target\apidocs\overview-tree.html = 1656142187145
+D:\Libraries\GradingBuddy\target\apidocs\package-search-index.js = 1656142187163
+D:\Libraries\GradingBuddy\target\apidocs\script.js = 1656142187183
+D:\Libraries\GradingBuddy\target\apidocs\search.js = 1656142187184
+D:\Libraries\GradingBuddy\target\apidocs\stylesheet.css = 1656142187182
+D:\Libraries\GradingBuddy\target\apidocs\tag-search-index.js = 1656142187164
+D:\Libraries\GradingBuddy\target\apidocs\type-search-index.js = 1656142187163

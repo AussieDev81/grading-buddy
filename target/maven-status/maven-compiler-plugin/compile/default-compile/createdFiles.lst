@@ -1,0 +1,9 @@
+com\ozapis\handler\ReportHandler.class
+com\ozapis\model\Student.class
+com\ozapis\annotation\Grade.class
+com\ozapis\annotation\Feedback.class
+com\ozapis\model\Person.class
+com\ozapis\model\Teacher.class
+com\ozapis\GradingBuddy.class
+com\ozapis\handler\AnnotationHandler.class
+com\ozapis\model\Report.class
