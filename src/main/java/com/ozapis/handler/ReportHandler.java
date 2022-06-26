@@ -12,7 +12,7 @@ import java.util.stream.Stream;
 public interface ReportHandler {
 
     /**
-     * Generate a report object containing all attributes associated with grading an assignment.<br/>
+     * Generate a report object containing all attributes associated with grading an assignment.<br>
      * An example of creating a new {@link Report} with 2 annotation classes:
      * <pre>
      * var report = new Report( teacher, student, "com.example", 79.5, Feedback.class, Grade.class );
@@ -39,7 +39,7 @@ public interface ReportHandler {
     }
 
     /**
-     * Gets the total awarded grades from all classes, methods, and fields.<br/>
+     * Gets the total awarded grades from all classes, methods, and fields.<br>
      * All {@link Grade#marksAwarded()} values within the given package will be summed and returned as a double value.
      * @param packageName The package to scan
      * @return The sum of all awarded marks

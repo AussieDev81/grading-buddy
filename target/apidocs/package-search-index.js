@@ -1,1 +1,1 @@
-packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"com.ozapis"},{"l":"com.ozapis.annotation"},{"l":"com.ozapis.handler"},{"l":"com.ozapis.model"}];updateSearchResults();
+packageSearchIndex = [{"l":"All Packages","url":"allpackages-index.html"},{"l":"com.ozapis"},{"l":"com.ozapis.annotation"},{"l":"com.ozapis.handler"},{"l":"com.ozapis.model"}]
