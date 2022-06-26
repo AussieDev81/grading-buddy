@@ -1,5 +1,4 @@
-target/
-!target/grading-buddy-1.0.0.jar #Allow jar
+!target/
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
